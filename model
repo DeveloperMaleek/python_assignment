@@ -1,0 +1,58 @@
+class User():
+    first_name = ''
+    last_name = ''
+    email_address = ''
+    phone_number = ''
+    allergies = ''
+    food_diet = ''
+    user_type = ''
+    is_active = ''
+
+    def get_full_name(self):
+        return "{}, {}".format(user.first_name, user.last_name)
+
+
+class MenuItem():
+    name = ''
+    description = ''
+    serving_size = ''
+    allergens = ''
+
+
+class Order():
+    item = ''
+    price = ''
+    quantity = 15.00
+
+    def get_item_price(self):
+        return "{}, GHS {}, qty: {}".format(order.item, order.price * order.quantity, order.quantity)
+
+
+class Price():
+    pass
+
+
+order = Order()
+order.price = 10.00
+order.item = "Sweet Potato"
+order.quantity = 4
+
+print("Your order purchase is: ", order.get_item_price())
+
+user = User()
+user.first_name = 'Malik'
+user.last_name = 'Kolade'
+user.phone_number = '9059784163'
+user.email_address = 'malik.kolade@meltwater.org'
+
+print('My name is {} and we are Fuudia'.format(user.get_full_name()))
+
+
+class Father():
+    last_name = ''
+    company = ''
+    wife = ''
+
+
+class Son(Father):
+    first_name = ''
